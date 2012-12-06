@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "DetailViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +16,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    /*
+    TTNavigator* navigator = [TTNavigator navigator];
+
+    navigator.persistenceMode = TTNavigatorPersistenceModeAll;
+    
+    TTURLMap* map = navigator.URLMap;
+
+    [map                    from: @"tt://home"
+          toSharedViewController: [ViewController class]];
+    
+    [map            from: @"tt://detailView"
+                  parent: @"tt://home"
+        toViewController: [DetailViewController class]
+                selector: nil
+              transition: 0];
+    */
+     return YES;
+    
+}
+
+- (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)URL {
+    [[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:URL.absoluteString]];
     return YES;
 }
 							

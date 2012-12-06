@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Three20/Three20.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : NSObject <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
