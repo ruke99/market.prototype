@@ -1,7 +1,7 @@
 //
 //  AppDelegate.m
 //  market.prototype
-//
+//  V 2.0
 //  Created by James Go on 12-03-16.
 //  Copyright (c) 2012 NBTUS. All rights reserved.
 //
